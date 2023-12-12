@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 	&nbsp; - пробіл 
+        // &#10054 - зірочка
+
+        //прямокутник, прямокутний трикутник, рівносторонній трикутник, ромб 
+
+        //прямокутний трикутник
+        for (let i = 0; i < 10; ++i) {
+            for (let j = i + 0; j < 10; j++) {
+                document.write("&#10054");
+            }           
+            document.write("<br/>");  }
+
+            document.write("<br/> <br/> <br/>"); 
+
+        //рівносторонній трикутник
+
+        for (let i = 0; i < 7; ++i) {            
+            for (let j = i + 0; j < 7; j++) {
+                document.write("&#10054 &nbsp ");
+            }
+            document.write("<br/>");  }
+
+        //ромб
+        for (let i = 0; i < 7; ++i) {           
+            for (let j = i + 0; j < 7; j++) {
+                document.write("&nbsp ");
+            }
+            for (let k = 0; k < 7; ++k) {
+                document.write("&#10054 &nbsp ");
+            }
+          
+            document.write("<br/>");  }
+
+            document.write("<br/> <br/> <br/>"); 
+
+        //прямокутник        
+
+        for(let i = 0; i < 7; i++) {
+            for(let j = i; j < i + 1; j++) {
+                switch (i) {
+                    case 0: 
+                    document.write('&#10054 &nbsp &#10054 &nbsp &#10054 &nbsp &#10054 &nbsp &#10054'); break;
+                    case 1: 
+                    document.write('&#10054 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#10054');break;
+                    case 2: 
+                    document.write('&#10054 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#10054'); break;
+                    case 3: 
+                    document.write('&#10054 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#10054'); break;
+                    case 4:
+                    document.write('&#10054 &nbsp &#10054 &nbsp &#10054 &nbsp &#10054 &nbsp &#10054'); break;
+                    }
+                }
+            document.write('<br>');
+            }
+
+    </script>
+    
+</body>
+</html>
