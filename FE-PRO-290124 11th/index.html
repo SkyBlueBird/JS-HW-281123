@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #currencyConverter {
+            margin-bottom: 20px;
+        }
+
+        #currencyResult {
+            font-weight: bold;
+        }
+
+        #sliderContainer {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        #imageSlider {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        #imageSlider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+    </style>
+  
+   
+</head>
+<body>
+  <div id="currencyConverter">
+    <label for="amount">Сума:</label>
+    <input type="number" id="amount" placeholder="Введіть суму">
+
+    <label for="exchangeRate">Курс обміну:</label>
+    <input type="number" id="exchangeRate" placeholder="Введіть курс обміну">
+
+    <button onclick="convertCurrency()">Конвертувати</button>
+
+    <p id="currencyResult"></p>
+</div>
+
+<div id="sliderContainer" onmouseover="stopSlider()" onmouseout="startSlider()">
+    <div id="imageSlider">
+        <img src="./img/image 1.jpg" alt="Image 1">
+        <img src="./img/image 2.jpg" alt="Image 2">
+        <img src="./img/image 3.jpg" alt="Image 3">
+    </div>
+</div>
+
+  
+
+    <script src="object.js"></script>
+
+</body>
+</html>
