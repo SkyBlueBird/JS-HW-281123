@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .color-option {
+            margin-bottom: 10px;
+            }
+
+        .color-option label {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            }
+
+      
+    </style>
+  
+   
+</head>
+<body>
+    <div class="color-option">
+        <input type="radio" id="color-red" value="red">
+        <label for="color-red">Red</label>
+      </div>
+      
+      <div class="color-option">
+        <input type="radio" id="color-green" value="green">
+        <label for="color-green">Green</label>
+      </div>
+      
+      <div class="color-option">
+        <input type="radio" id="color-blue" value="blue">
+        <label for="color-blue">Blue</label>
+      </div>
+
+      <form id="hobbiesForm">
+        <label><input type="checkbox" name="hobby" value="Reading"> Reading</label><br>
+        <label><input type="checkbox" name="hobby" value="Sports"> Sports</label><br>
+        <label><input type="checkbox" name="hobby" value="Music"> Music</label><br>
+        <label><input type="checkbox" name="hobby" value="Cooking"> Cooking</label><br>
+        <label><input type="checkbox" name="hobby" value="Gardening"> Gardening</label><br>
+      </form>
+      <div id="selectedHobbies"></div>
+
+      <form id="countryForm">
+        <label for="countries">Choose a country:</label>
+        <select id="countries" name="countries">
+          <option value="">Select a country</option>
+          <option value="USA">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="France">France</option>
+          <option value="Germany">Germany</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </form>
+      <div id="countryInfo"></div>
+
+    <script src="object.js"></script>
+
+</body>
+</html>
